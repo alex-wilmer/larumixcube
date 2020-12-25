@@ -11,7 +11,9 @@ function App() {
           larumix_cube.mp3</a>
       </h2>
 
-      {!showTL && <a href="#" onClick={() => setShowTL(true)}>show tracklist (spoilers!)</a>}
+      {!showTL &&
+        // eslint-disable-next-line
+        <a href="#" onClick={() => setShowTL(true)}>show tracklist (spoilers!)</a>}
       <br />
       {showTL &&
         <>
